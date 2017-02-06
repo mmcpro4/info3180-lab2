@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div id="image">
+	<img src="{{ url_for('static', filename='pic.png') }}">
+
+		<img src="pic.png" alt="A picture of Chev" height="150" width="150">
+	</div>
+	<div id="header">
+		<strong>Obi-Wan Kenobi</strong>
+	</div>
+	<div id="inner">
+		<p>Today's date is {{ timeinfo }}</p><hr>
+		<strong>Username: </strong> Chev<br><br>
+		<strong>ID Number: </strong> 620012345<br><br>
+		<strong>Age: </strong> 200<br><br>
+		<strong>Gender: </strong> Male<br><hr>
+		I am a legendary Jedi Master.
+	</div>
+{% endblock %}
